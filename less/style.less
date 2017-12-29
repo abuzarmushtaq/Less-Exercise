@@ -1,3 +1,22 @@
+// Variabels
+@base-color: #33586b;
+
+
+// Nesting
 body {
-    background-color: darkgreen;
+    background-color: @base-color ;
+
+    .main {
+        div {
+            .set(200px);
+        }
+    }
+}
+
+// Mixin
+.set(@val) {
+    background-color: #eceff1;
+    height: @val;
+    width: @val;
+    margin: 5px;
 }
