@@ -1,0 +1,9 @@
+body {
+  background-color: #385e70;
+}
+.main div {
+  background-color: #eceff1;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+}
