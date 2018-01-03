@@ -1,9 +1,22 @@
 body {
-  background-color: #385e70;
+  background-color: #263238;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
 }
-.main div {
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+.parent div {
+  height: 8em;
+  width: 8em;
   background-color: #eceff1;
-  height: 200px;
-  width: 200px;
-  margin: 5px;
+  margin-right: 10px;
+}
+.other {
+  height: 100px;
+  width: 100px;
+  background-color: #cfd8dc;
 }

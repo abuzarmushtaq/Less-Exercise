@@ -1,22 +1,27 @@
-// Variabels
-@base-color: #385e70;
-
-
-// Nesting
 body {
-    background-color: @base-color ;
+    background-color: #263238;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
 }
-    .main {
-        div {
-            .set(200px);
-        }
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    div {
+        .box(8em, #eceff1);
+        margin-right: 10px;
     }
+}
 
+.other {
+    .box(100px,#cfd8dc);
+}
 
-// Mixin
-.set(@val) {
-    background-color: #eceff1;
+.box(@val, @color) {
     height: @val;
     width: @val;
-    margin: 5px;
+    background-color: @color;
 }
+
