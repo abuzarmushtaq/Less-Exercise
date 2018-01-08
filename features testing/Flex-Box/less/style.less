@@ -1,5 +1,5 @@
 body {
-    background-color: #011f1a;
+
     padding: 0px;
     margin: 0px;
     font-family: 'Segoe UI';
@@ -20,8 +20,7 @@ a {
         a {
             padding: 1em;
             font-size: 1.2em;
-            color: white;
-            background-color: #263238;
+            .scheme;
 
             &:hover {
                 background-color: white;
@@ -29,11 +28,10 @@ a {
             }
         }
     }
+
     .links {
-        display: flex;
         a {
-            color: white;
-            background-color: #37474f;
+            .scheme;
             margin: .4em;
             padding: 1em;
             list-style-type: none;
@@ -42,6 +40,44 @@ a {
                 color: black;
             }
         }
+    }
+}
+
+.links {
+    display: flex;
+}
+
+.ham {
+    display: none;
+    margin-right: 1em;
+    a {
+        font-size: 2.4em;
+        .scheme;
+        padding-left: .5em;
+        padding-right: .5em;      
+        
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+        
+    }
+}
+
+// mixin
+.scheme() {
+    color: white;
+    background-color: #37474f;
+}
+
+@media (max-width: 600px) {
+
+    .links {
+        display: none;
+    }
+
+    .ham {
+        display: flex;
     }
 }
 
