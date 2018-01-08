@@ -54,6 +54,9 @@ a {
   background-color: white;
   color: black;
 }
+.ham a:hover .links {
+  display: block;
+}
 @media (max-width: 600px) {
   .links {
     display: none;
