@@ -1,36 +1,36 @@
 body {
+  font-family: 'Segoe UI';
   padding: 0px;
   margin: 0px;
-  font-family: 'Segoe UI';
 }
 a {
   text-decoration: none;
 }
 .navigation {
   background-color: #78909c;
-  display: flex;
   justify-content: space-between;
+  display: flex;
   height: 4em;
 }
 .navigation .logo {
   margin: 1.2em;
 }
 .navigation .logo a {
-  padding: 1em;
   font-size: 1.2em;
-  color: white;
+  padding: 1em;
   background-color: #37474f;
+  color: white;
 }
 .navigation .logo a:hover {
   background-color: white;
   color: black;
 }
 .navigation .links a {
-  color: white;
-  background-color: #37474f;
+  list-style-type: none;
   margin: .4em;
   padding: 1em;
-  list-style-type: none;
+  background-color: #37474f;
+  color: white;
 }
 .navigation .links a:hover {
   background-color: white;
@@ -40,15 +40,15 @@ a {
   display: flex;
 }
 .ham {
-  display: none;
   margin-right: 1em;
+  display: none;
 }
 .ham a {
-  font-size: 2.4em;
-  color: white;
-  background-color: #37474f;
-  padding-left: .5em;
   padding-right: .5em;
+  padding-left: .5em;
+  font-size: 2.4em;
+  background-color: #37474f;
+  color: white;
 }
 .ham a:hover {
   background-color: white;

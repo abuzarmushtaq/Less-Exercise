@@ -1,8 +1,8 @@
 body {
-
+    font-family: 'Segoe UI';
     padding: 0px;
     margin: 0px;
-    font-family: 'Segoe UI';
+    
 } 
 
 a {
@@ -12,14 +12,14 @@ a {
 
 .navigation {
     background-color: #78909c;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     height: 4em;
     .logo {
         margin: 1.2em;
         a {
-            padding: 1em;
             font-size: 1.2em;
+            padding: 1em;
             .scheme;
 
             &:hover {
@@ -31,10 +31,11 @@ a {
 
     .links {
         a {
-            .scheme;
-            margin: .4em;
-            padding: 1em;
             list-style-type: none;
+            margin: .4em;
+            padding: 1em;            
+            .scheme;
+           
             &:hover {
                 background-color: white;
                 color: black;
@@ -48,14 +49,15 @@ a {
 }
 
 .ham {
+    margin-right: 1em; 
     display: none;
-    margin-right: 1em;
-    a {
-        font-size: 2.4em;
-        .scheme;
+
+    a { 
+        padding-right: .5em;  
         padding-left: .5em;
-        padding-right: .5em;      
-        
+        font-size: 2.4em;    
+        .scheme;
+
         &:hover {
             background-color: white;
             color: black;
@@ -63,15 +65,15 @@ a {
 
         &:hover .links{
             display: block;
-        }
-        
+        } 
     }
 }
 
 // mixin
 .scheme() {
-    color: white;
     background-color: #37474f;
+    color: white;
+    
 }
 
 @media (max-width: 600px) {
