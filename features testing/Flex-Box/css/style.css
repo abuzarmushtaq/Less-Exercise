@@ -1,22 +1,42 @@
 body {
-  background-color: #263238;
-  margin: 0px;
+  background-color: #011f1a;
   padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI';
+}
+a {
+  text-decoration: none;
+}
+.navigation {
+  background-color: #78909c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 4em;
 }
-.parent {
+.navigation .logo {
+  margin: 1.2em;
+}
+.navigation .logo a {
+  padding: 1em;
+  font-size: 1.2em;
+  color: white;
+  background-color: #263238;
+}
+.navigation .logo a:hover {
+  background-color: white;
+  color: black;
+}
+.navigation .links {
   display: flex;
-  flex-direction: row;
 }
-.parent div {
-  height: 8em;
-  width: 8em;
-  background-color: #eceff1;
-  margin-right: 10px;
+.navigation .links a {
+  color: white;
+  background-color: #37474f;
+  margin: .4em;
+  padding: 1em;
+  list-style-type: none;
 }
-.other {
-  height: 100px;
-  width: 100px;
-  background-color: #cfd8dc;
+.navigation .links a:hover {
+  background-color: white;
+  color: black;
 }

@@ -1,27 +1,47 @@
 body {
-    background-color: #263238;
-    margin: 0px;
+    background-color: #011f1a;
     padding: 0px;
-    display: flex;
-    justify-content: space-around;
+    margin: 0px;
+    font-family: 'Segoe UI';
+} 
+
+a {
+    text-decoration: none;
 }
 
-.parent {
+
+.navigation {
+    background-color: #78909c;
     display: flex;
-    flex-direction: row;
-    div {
-        .box(8em, #eceff1);
-        margin-right: 10px;
+    justify-content: space-between;
+    height: 4em;
+    .logo {
+        margin: 1.2em;
+        a {
+            padding: 1em;
+            font-size: 1.2em;
+            color: white;
+            background-color: #263238;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
     }
-}
-
-.other {
-    .box(100px,#cfd8dc);
-}
-
-.box(@val, @color) {
-    height: @val;
-    width: @val;
-    background-color: @color;
+    .links {
+        display: flex;
+        a {
+            color: white;
+            background-color: #37474f;
+            margin: .4em;
+            padding: 1em;
+            list-style-type: none;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
 }
 
