@@ -1,0 +1,26 @@
+// colors
+@bg-color: #eceff1;
+
+// images path
+@bg-images: "../images/";
+
+// body {
+//     background-color: lighten(@bg-color, 0%);
+// }
+
+body {
+    background-color: darken(@bg-color, 75%);
+}
+
+.wrap {
+    width: 600px;
+    height: 600px;
+    background-image: url("@{bg-images}grass.jpg");
+}
+
+.something {
+    width: 400px;
+    height: 400px;
+    background-image: url("@{bg-images}welding.jpg");
+    
+}

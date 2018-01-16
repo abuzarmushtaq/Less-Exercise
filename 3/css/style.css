@@ -1,0 +1,13 @@
+body {
+  background-color: #283136;
+}
+.wrap {
+  width: 600px;
+  height: 600px;
+  background-image: url("../images/grass.jpg");
+}
+.something {
+  width: 400px;
+  height: 400px;
+  background-image: url("../images/welding.jpg");
+}
